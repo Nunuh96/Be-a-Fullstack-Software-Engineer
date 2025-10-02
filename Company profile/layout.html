@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <!-- Meta data dan pengaturan tampilan -->
+    <style>
+        /* Styling judul halaman */
+        .judul{
+            color: white;
+            background-color: blue;
+            position: fixed;
+        }
+        /* styling untuk box */
+        .container{
+            display: flex;
+        }
+        .container div{
+            border-style: solid;
+        }
+        .box-1{
+            background-color: red;
+            flex: 1;
+            text-align: center;
+        }
+        .box-2{
+            background-color: green;
+            flex: 1;
+            text-align: center;
+        }
+        .box-3{
+            background-color: yellow;
+            flex: 1;
+            text-align: center;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1 class="judul">
+        Judul Halaman
+    </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <!-- kotak 1 -->
+        <div class="box-1">
+            Box 1
+        </div>
+        <!-- Kotak 2 -->
+        <div class="box-2">
+            Box 2
+        </div>
+        <!-- kotak 3 -->
+        <div class="box-3">
+            Box 3
+        </div>
+    </div>
+</body>
+</html>
