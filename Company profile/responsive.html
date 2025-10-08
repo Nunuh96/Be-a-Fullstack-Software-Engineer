@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design & Media Queries</title>
+     <!-- Meta data dan pengaturan tampilan -->
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .judul-halaman{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: cadetblue;
+            position: fixed;
+        }
+        .nav-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+        }
+        .nav-list li{
+            float: left;
+            list-style-type: none;
+        }
+        .nav-list li a{
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav-list li a:hover {
+             background-color: lightblue;
+        }
+        .container{
+            display: flex;
+        }
+        .container div{
+            border-style: dotted;
+        }
+        .box-1{
+            background-color: aqua;
+            flex: 1;
+            text-align: center;
+        }
+        .box-2{
+            background-color: blueviolet;
+            flex: 1;
+            text-align: center;
+        }
+        .box-3{
+            background-color: chartreuse;
+            flex: 1;
+            text-align: center;
+        /* Media Query untuk layar kecil */
+        @media screen and (max-width: 600px) {
+            .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .box-1,
+        .box-2,
+        .box-3 {
+        width: 80%;
+        margin-bottom: 10px;
+        }
+        }
+        }
+        .paragraph{
+            border: 2px solid green;
+            padding: 5px;
+        }
+        .quality{
+            border: 2px dotted brown;
+            padding: 5px;
+        }
+        .sp{
+            border: 2px dashed navy;
+            padding: 5px;
+        }
+        .thead{
+            background-color:cornflowerblue;
+        }
+        .table{
+            border: 2px solid;
+            padding: 3px;
+            table-layout: auto;
+            border-collapse: collapse;
+            background-color: aqua;
+        }
+        th, td{
+            border: 2px solid;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <h1 class="judul-halaman"><strong>Being A Superior Person</strong></h1>
+        
+    </Header>
+
+    <br>
+    <br>
+    <br>
+
+    <nav class="nav-list">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+            <div class="box-1">
+                Box-1
+            </div>
+            <div class="box-2">
+                Box-2
+            </div>
+            <div class="box-3">
+                Box-3
+            </div>
+        </div>
+    <section>
+        <h2>
+        Introduction
+        </h2>
+        <p class="paragraph">
+            Being a "superior person" can describe someone with superior qualities, like wisdom, skill, and compassion, who seeks personal growth and treats others with respect and dignity. Alternatively, the term can refer to a superiority complex, a psychological state marked by an outwardly confident but inwardly insecure attitude, often leading to arrogance, a need for control, and a difficulty accepting criticism. 
+        </p>
+        <h3>
+            Quality of a Truly Superior Person
+        </h3>
+        <ol class="quality">
+            <li>Personal growth and self awereness</li>
+            <li>Integrity and Compassion
+            </li>
+            <li>Humality and Objectivity</li>
+            <li>Emotional maturity</li>
+            <li>Action oriented and  Visionary</li>
+            <li>Contribution to others</li>
+        </ol>
+        <h3>
+            The Superiority Complex
+        </h3>
+
+        <ul class="sp">
+            <li>Symptons</li>
+            <li>Physilogical underpinnings</li>
+            <li>Behavioral Manifestations</li>
+            <li>Treatments</li>
+        </ul>
+        <h4>
+            Table of Type Personality Comparisson
+        </h4>
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <td>Number</td>
+                    <td>trait</td>
+                    <td>Type A</td>
+                    <td>Type B</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pace of work</td>
+                    <td>Fast, deadline-driven</td>
+                    <td>Steady, Process-focused</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Response to stress</td>
+                    <td>Reactive; prone to anxiety</td>
+                    <td>Relaxed; handles pressure calmly</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Goal orientation</td>
+                    <td>Achievement-obsessed</td>
+                    <td>Achievement-aware, but not fixated</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+<br>
+<br>
+<hr>
+<footer>
+    <strong>Thank You</strong>
+</footer>
+</html>
